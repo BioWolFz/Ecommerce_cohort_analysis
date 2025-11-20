@@ -1,4 +1,4 @@
-#E-commerce Customer Retention Analysis (MySQL)
+#E-commerce Cohort Analysis (MySQL)
 
 ##Project Overview
 
@@ -31,7 +31,7 @@ The final retention table below clearly shows the retention rates for the 2024 c
 
 
 * **Observation:** The **2024-01** cohort, the largest with **21** customers, shows a retention rate of **52.38%** one month later (Index 1). This is a crucial benchmark for measuring the effectiveness of customer onboarding.
-* **Business Value:** This table allows a company to instantly see which cohorts are performing best and identify the *break-even point* in months (where retention stabilizes), which is essential for calculating Customer Lifetime Value (CLV).
+* **Business Value:** This table allows any company to instantly see which cohorts are performing best and identify the *break-even point* in months (where retention stabilizes), which is essential for calculating Customer Lifetime Value (CLV).
 
 ---
 
@@ -82,4 +82,5 @@ SELECT
         ), 2
     ) AS retention_rate_pct
 FROM cohort_data
+
 ORDER BY 1, 2;
